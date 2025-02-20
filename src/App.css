@@ -1,38 +1,487 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav {
+  padding: 20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-logo img {
+  width: 130px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 90px;
+}
+.nav-main {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-search {
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.nav-search input {
+  border: none;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.account img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+.account {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.icons {
+  display: flex;
+  gap: 40px;
+  font-size: 1.5em;
+  color: rgb(87, 87, 87);
+}
+.sidebar {
+  padding: 20px 30px;
+  background-color: white;
+  width: 15%;
+}
+.side-account {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.side-account img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.side-account-info {
+  font-size: 15px;
+}
+.sideLinks {
   display: flex;
   flex-direction: column;
+  gap: 30px;
+}
+.sideLink {
+  display: flex;
+  justify-content: space-between;
+}
+.sideIcon {
+  font-size: 1.2em;
+  color: gray;
+}
+section {
+  display: flex;
+  background-color: #f2edf3;
+  width: 100%;
+}
+.dashBoard {
+  padding: 40px 30px 0px 30px;
+  width: 100%;
+}
+.dHome {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.home {
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+  height: max-content;
+  width: 100%;
+}
+.homeIcon {
+  border: 1px solid;
+  width: 40px;
+  height: 40px;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#da8cff),
+    to(#9a55ff)
+  );
+  color: white;
+  border: none;
+  border-radius: 5px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 17px;
+  box-shadow: 0 3px 8.3px 0.7px rgba(163, 93, 255, 0.35);
+}
+.home p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.dContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+.dCard {
+  width: 30%;
+  height: 20vh;
+  border-radius: 5px;
+  padding: 30px;
+  background: rgb(254, 162, 149);
+  background: linear-gradient(
+    90deg,
+    rgba(254, 162, 149, 1) 0%,
+    rgba(254, 138, 149, 1) 100%
+  );
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.dCard2 {
+  background: rgb(126, 188, 237);
+  background: linear-gradient(
+    90deg,
+    rgba(126, 188, 237, 1) 0%,
+    rgba(60, 156, 233, 1) 100%
+  );
+}
+.dCard3 {
+  background: rgb(111, 213, 200);
+  background: linear-gradient(
+    90deg,
+    rgba(111, 213, 200, 1) 0%,
+    rgba(48, 208, 185, 1) 100%
+  );
+}
+.dCard div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dCard h2 {
+  margin-bottom: 40px;
+  font-size: 1.9em;
+  font-weight: 550;
+}
+.countries {
+  display: flex;
+  gap: 20px;
+}
+.countries div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.dChartTop {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.dChart {
+  background-color: white;
+  width: 55%;
+  padding: 30px;
+}
+.dChart img {
+  width: 100%;
+}
+.circle {
+  background-color: #b66dff;
+  border: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.circle2 {
+  background-color: #fe7c96;
+}
+.circle3 {
+  background-color: #198ae3;
+}
+.left {
+  width: 15%;
+  border: 1px solid;
+  height: 100vh;
+}
+.right {
+  width: 100%;
+  border: 1px solid;
+  height: 100vh;
+}
+.analyze {
+  display: flex;
+  justify-content: space-between;
+}
+.traffic {
+  background-color: white;
+  padding: 30px;
+}
+.amounts {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 50px;
+}
+.amount {
+  display: flex;
+  justify-content: space-between;
+}
+.amount div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.tickets {
+  background-color: white;
+  margin-top: 50px;
+  padding: 30px;
+}
+.tHead {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.t1 {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgba(0, 0, 0, 0.13);
+  margin: 30px 0;
+  line-height: 4;
+}
+.id img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.id {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.calendar {
+  background-color: white;
+  width: 40%;
+  height: 70vh;
+}
+.calendar-header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  justify-content: space-between;
+  background: rgb(111, 213, 200);
+  background: linear-gradient(
+    90deg,
+    rgba(111, 213, 200, 1) 0%,
+    rgba(48, 208, 185, 1) 100%
+  );
+  color: white;
+}
+.calendar-weekdays {
+  display: flex;
+  background: rgb(111, 213, 200);
+  background: linear-gradient(
+    90deg,
+    rgba(111, 213, 200, 1) 0%,
+    rgba(48, 208, 185, 1) 100%
+  );
+  color: white;
+  justify-content: space-between;
+  padding: 10px 50px;
+  margin-bottom: 30px;
+}
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  padding: 10px;
+}
+.calendar-days div {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 50%;
+}
+.tareekh {
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.updates {
+  background-color: white;
+  width: 55%;
+  padding: 30px;
+}
+.uInfo {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+}
+.uInfo div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.uimg {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.uimg img {
+  width: 400px;
+  margin: 10px 0;
+}
+.ufooter {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.uID {
+  display: flex;
+  font-size: 0.9em;
+  align-items: center;
+  gap: 10px;
+}
+.uID img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+th,
+td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  font-weight: bold;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+.progress-container {
+  width: 100%;
+  background-color: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 10px;
+  border-radius: 10px;
+}
+
+.teal {
+  background-color: #4fd1c5;
+  width: 40%;
+}
+.pink {
+  background-color: #f687b3;
+  width: 60%;
+}
+.yellow {
+  background-color: #ecc94b;
+  width: 90%;
+}
+.purple {
+  background-color: #9f7aea;
+  width: 50%;
+}
+.orange {
+  background-color: #ed8936;
+  width: 55%;
+}
+.blue {
+  background-color: #4299e1;
+  width: 70%;
+}
+.project {
+  background-color: white;
+  padding: 30px;
+}
+.project {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 55%;
+}
+.aakhir {
+  display: flex;
+  justify-content: space-between;
+}
+.task {
+  background-color: white;
+  width: 40%;
+  padding: 50px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.tSearch {
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+}
+.tSearch input {
+  height: 100%;
+  width: 84%;
+  border: 1px solid rgba(0, 0, 0, 0.199);
+  padding-left: 20px;
+}
+.tSearch button {
+  width: 15%;
+  background-color: #c177ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.t {
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.164);
+  justify-content: space-between;
+}
+.box {
+  display: flex;
+  gap: 10px;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  border-top: 1px solid rgba(0, 0, 0, 0.151);
+  height: 10vh;
+  align-items: center;
+}
+footer p {
+  color: gray;
+}
+footer p a {
+  text-decoration: none;
+  color: #3ecfba;
+  transition: all 0.2s ease-in-out;
+}
+footer p a:hover {
+  text-decoration: underline;
 }
