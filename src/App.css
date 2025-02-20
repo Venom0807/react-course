@@ -6,6 +6,9 @@
 }
 nav {
   padding: 20px;
+  position: sticky;
+  top: 0%;
+  background-color: white;
 }
 .nav-logo img {
   width: 130px;
@@ -225,6 +228,10 @@ section {
 .traffic {
   background-color: white;
   padding: 30px;
+  width: 40%;
+}
+.traffic img {
+  width: 100%;
 }
 .amounts {
   display: flex;
@@ -271,7 +278,6 @@ section {
 .calendar {
   background-color: white;
   width: 40%;
-  height: 70vh;
 }
 .calendar-header {
   display: flex;
@@ -484,4 +490,41 @@ footer p a {
 }
 footer p a:hover {
   text-decoration: underline;
+}
+@media (max-width: 1880px) {
+  .dCard {
+    height: max-content;
+  }
+}
+@media (max-width: 1650px) {
+  .dChart {
+    width: 50%;
+  }
+}
+@media (max-width: 1498px) {
+  .dChart {
+    width: 45%;
+  }
+  .uimg img {
+    width: 48%;
+  }
+  .sidebar {
+    font-size: small;
+  }
+  .sidebar {
+    padding: 15px;
+  }
+  .side-account img {
+    width: 30px;
+    height: 30px;
+  }
+  .side-account-info p {
+    font-size: 10px;
+  }
+  .side-account-info strong {
+    font-size: 13px;
+  }
+  .traffic {
+    width: 50%;
+  }
 }
